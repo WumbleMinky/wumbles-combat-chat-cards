@@ -1,0 +1,50 @@
+<div class="wccc-attack-result">
+	<div class="wccc-attack-result-title">
+		Results - {{number}}
+	</div>
+	<div class="wccc-hidable-content">
+		<div>
+			{{#if hasTarget }}
+			<div><strong class="wccc-target-title">{{ localize "DND5E.Target" }}</strong></div>
+			<div class="wccc-targets-list">
+				<div class="wccc-target-name">
+				{{#each targets }}
+				<div><img class="wccc-target-image" src="{{this.document.texture.src}}" data-target-id="{{this.id}}" title="{{this.name}}" width="40" height="40" style="border:0px" /></div>
+				{{/each}}
+				</div>
+			</div>
+			{{/if}}
+		</div>
+		{{#if hasAttack }}
+		<div class="wccc-result-section" >{{ localize "DND5E.Attack" }}</div>
+		
+		<div class="flexrow 1">
+			<div class="wccc-attack-roll wccc-result-roll">Waiting for Roll...</div>
+		</div>
+		{{/if}}
+		{{#if hasDamage }}
+		<div class="wccc-result-section">
+			{{#if isHealing}}{{ localize "DND5E.Healing" }}
+			{{else}}{{ localize "DND5E.Damage" }}{{/if}}
+		</div>
+		
+		<div class="flexrow 1">
+			<div class="wccc-damage-roll wccc-result-roll">Waiting for Roll...</div>
+		</div>
+		{{/if}}
+		{{#if hasSave }}
+		<div class="wccc-result-section" >{{ localize "DND5E.SavingThrow" }}</div>
+		
+		<div class="flexrow 1">
+			<div class="wccc-saving-throw wccc-result-roll">Waiting for Roll...</div>
+		</div>
+		{{/if}}
+		{{#if hasOther }}
+		<div class="wccc-result-section" >{{ localize "DND5E.ActionOther" }}</div>
+		
+		<div class="flexrow 1">
+			<div class="wccc-other-formula wccc-result-roll">Waiting for Roll...</div>
+		</div>
+		{{/if}}
+	</div>
+</div>

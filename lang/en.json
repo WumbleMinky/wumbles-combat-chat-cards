@@ -1,0 +1,8 @@
+{
+	"WumbleMinkysCombatChatCard.mergeCard.name": "Merge Cards",
+	"WumbleMinkysCombatChatCard.mergeCard.hint": "Merge Attack/Spell/Item rolls into a single card (requires libWrapper)",
+	"WumbleMinkysCombatChatCard.diceRolled": "Dice Rolled",
+	"WumbleMinkysCombatChatCard.onlyAttackAdds.name": "Only Attacks Add Result",
+	"WumbleMinkysCombatChatCard.onlyAttackAdds.hint": "When an attack is available, only the attack will add roll results. Otherwise, any roll will add a result.",
+	"WumbleMinkysCombatChatCard.onlyAttackAdds.error": "You cannot roll damage without first rolling attack while 'Only Attacks Add Result' is enabled."
+}

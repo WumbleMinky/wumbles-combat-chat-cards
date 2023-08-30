@@ -1,0 +1,77 @@
+.dice-total.dmgBtn-wccc {
+  transition: color 0.2s ease-in-out 0.7s;
+}
+
+.dice-total.dmgBtn-wccc:hover {
+  color: transparent;
+  transition: color 0.2s ease-in-out 0s;
+}
+
+.btn-container-wccc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex !important;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out 0.7s;
+}
+
+.btn-container-wccc:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out 0s;
+}
+
+.btn-container-wccc button {
+  height: 100% !important;
+  margin: 1px !important;
+  padding: 0;
+  font-weight: bold;
+}
+
+.wccc-target-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+}
+.wccc-target-name div {
+  margin: 2px;
+}
+
+.wccc-attack-result {
+  border-top: 2px groove #FFF;
+  padding-bottom: 5px;
+}
+
+.wccc-attack-result-title{
+	font-size: 14px;
+	text-align:center;
+}
+
+.wccc-attack-result-title:hover{
+	text-shadow: 0 0 10px red;
+}
+
+.wccc-result-section{
+	text-align:left;
+}
+
+.wccc-result-roll{
+	text-align:center;
+}
+
+.wccc-target-title:hover{
+	text-shadow: 0 0 10px red;
+}
+
+.wccc-target-image:hover{
+	box-shadow: 0 0 15px #a66;
+	-moz-box-shadow: 0 0 15px #a66;
+    -webkit-box-shadow: 0 0 15px #a66;
+}
