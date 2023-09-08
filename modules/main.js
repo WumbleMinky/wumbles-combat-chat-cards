@@ -302,7 +302,7 @@ export class WumblesCombatChatCard {
 	}
 	
 	static async replaceSavingThrow(wrapped, abilityId, options){
-		if (!getSetting("mergeCard"))
+		if (!getSetting("mergeCard") || !options.hasOwnProperty('speaker'))
 			return wrapped(abilityId, options);
 		
 		options.chatMessage = false;			//prevent the chatMessage from being displayed.
@@ -317,7 +317,7 @@ export class WumblesCombatChatCard {
 	static async replaceFormulaRoll(wrapped, options){
 		if (!getSetting("mergeCard"))
 			return wrapped(options);
-			
+		
 		let roll = await new Roll(this.system.formula, this.getRollData()).roll({async:true});
 		if (!roll)
 			return;
